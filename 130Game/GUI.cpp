@@ -2,7 +2,7 @@
 #include <string>
 #include <iostream>
 
-GUI::GUI() :desktop(), render_window(sf::VideoMode(1400, 950), "Animation Editor", sf::Style::Close)
+GUI::GUI() :desktop(), render_window(sf::VideoMode(1400, 950), "Honors 130 Project", sf::Style::Close)
 {
 	programFont.loadFromFile("gamefont.ttf");
 	iconImage = iconTexture.copyToImage();
