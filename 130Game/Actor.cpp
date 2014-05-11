@@ -1,9 +1,15 @@
+=====================================================================================================
+-----------The features that this code provided had to be cut from the game due to time.-------------
+=====================================================================================================
+
+
+
 #include "Actor.h"
 #include <iostream>
 
 sf::Clock Actor::elapsedTimeClock;
 float Actor::elapsedTime;
-std::string Actor::anims[] = { "Slash", "Stab", "Cast", "Shoot", "Walk", "Die" };
+std::string Actor::anims[] = {"Cast",  "Walk", "Die" };
 
 
 Actor::Actor(int x, int y, std::string name){
@@ -79,9 +85,9 @@ std::string Actor::GetName(){
 };
 void Actor::SetUpAnimation(){
 	AddAnimation(new Animation("Walk", 0.075, 8, 64, 3, 2));
-	AddAnimation(new Animation("Run", 0.05, 16, 64, 0, 0));
-	AddAnimation(new Animation("Die", 0.05, 8, 64, 1, 1));
-	AddAnimation(new Animation("Shoot", 0.025, 8, 64, 2, 3));
+	AddAnimation(new Animation("a9j3", 0.05, 16, 64, 0, 0));
+	AddAnimation(new Animation("D209i", 0.05, 8, 64, 1, 1));
+	AddAnimation(new Animation("s93", 0.025, 8, 64, 2, 3));
 	AddAnimation(new Animation("Idle", 0.04, 1, 64, 7, 4));
 };
 bool Actor::UpdateAnimation(){
